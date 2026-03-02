@@ -80,6 +80,8 @@ public class anima1 {
 //	}
 
 	public static void main(String[] args) {
+		
+	
 		// TODO Auto-generated method stub
 //		String [] get = {"asd","kate","han","askke"};
 
@@ -135,9 +137,9 @@ public class anima1 {
 		
 		Set<Integer> set = new HashSet<>();
 		for (int num : arr) {
-//		    if (!set.add(num)) {
+		    if (!set.add(num)) {
 		        System.out.println(gh.add(num));
-//		    }
+		    }
 		}
 		
 //		List<Integer> g = Arrays.asList(k);
