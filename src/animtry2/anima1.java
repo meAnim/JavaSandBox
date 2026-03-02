@@ -81,6 +81,10 @@ public class anima1 {
 
 	public static void main(String[] args) {
 		
+		Employee emp1 = new Employee(1, "Emmanuel", "Engineering");
+		
+		emp1.printMe();
+		
 	
 		// TODO Auto-generated method stub
 //		String [] get = {"asd","kate","han","askke"};
@@ -131,16 +135,16 @@ public class anima1 {
 
 //	    System.out.println(rotLeft(mySample, 10)); find the lowest positive number not present
 
-		int[] arr = { 1, 2, 3 };
-	    
-		List<Integer> gh= new ArrayList<>();
-		
-		Set<Integer> set = new HashSet<>();
-		for (int num : arr) {
-		    if (!set.add(num)) {
-		        System.out.println(gh.add(num));
-		    }
-		}
+//		int[] arr = { 1, 2, 3 };
+//	    
+//		List<Integer> gh= new ArrayList<>();
+//		
+//		Set<Integer> set = new HashSet<>();
+//		for (int num : arr) {
+//		    if (!set.add(num)) {
+//		        System.out.println(gh.add(num));
+//		    }
+//		}
 		
 //		List<Integer> g = Arrays.asList(k);
 //

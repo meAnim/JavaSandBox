@@ -7,6 +7,7 @@ public class Employee {
 	private String name;
 	
 	private String department;
+	
 
 	public Employee(int id, String name, String department) {
 		this.id = id;
@@ -37,14 +38,9 @@ public class Employee {
 	public void setDepartment(String department) {
 		this.department = department;
 	}
-
-	@Override
-	public String toString() {
-		return "Employee [id=" + id + ", name=" + name + ", department=" + department + "]";
+	
+	public void printMe() {
+		System.out.println("This employee is" + this.name +" and works in "+ this.department +" department");
 	}
-	
-	
-	
-	
 
 }
