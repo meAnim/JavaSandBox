@@ -78,12 +78,31 @@ public class anima1 {
 //
 //		return answer; // Task completed
 //	}
-
+	
+	
+	public static void printOuts(Employee e) {
+		e.printMe();
+	}
+	
 	public static void main(String[] args) {
 		
 		Employee emp1 = new Employee(1, "Emmanuel", "Engineering");
 		
-		emp1.printMe();
+//		emp1.printMe();
+		
+//		EmployeeWithLocation emp2 = new EmployeeWithLocation(1, "Martin", "Cleaning", "Accra");
+//		
+//		emp2.printMe();
+//		
+//		printOuts(emp2);
+		
+		EmployeeWithLocation emp2 = new EmployeeWithLocation();
+		
+		emp2.location = "London";
+		
+		System.out.println(emp2.location);
+		
+		
 		
 	
 		// TODO Auto-generated method stub

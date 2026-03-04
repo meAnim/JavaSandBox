@@ -40,7 +40,9 @@ public class Employee {
 	}
 	
 	public void printMe() {
-		System.out.println("This employee is" + this.name +" and works in "+ this.department +" department");
+		System.out.println("This employee is " + this.name +" and works in "+ this.department +" department");
 	}
+
+	
 
 }
