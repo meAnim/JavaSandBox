@@ -4,80 +4,80 @@ import java.util.*;
 
 public class anima1 {
 
-//	public static List<String> arrangeList(List<String> mySample) {
-//
-//		Map<Integer, String> wordPositions = new HashMap<>();
-//		Map<Integer, String> numberPositions = new HashMap<>();
-//		List<String> wordPositionsL = new ArrayList<>();
-//		List<String> numberPositionsL = new ArrayList<>();
-////	    Iterator<String> gc = numberPositionsL.iterator();
-//
-//		// looping through the sample ArrayList and using HashMap to store the position
-//		// and the word or number as a key value per
-//		for (int i = 0; i < mySample.size(); i++) {
-//			try {
-//				Integer.parseInt(mySample.get(i));
-//				numberPositions.put(i, mySample.get(i));
-//				numberPositionsL.add(mySample.get(i));
-//			} catch (NumberFormatException e) {
-//				wordPositions.put(i, mySample.get(i));
-//				wordPositionsL.add(mySample.get(i));
-//
-//			}
-//		}
-//
-//		for (String g : mySample) {
-//			try {
-//				Integer.valueOf(g);
-//				numberPositions.put(mySample.indexOf(g), g);
-//				numberPositionsL.add(g);
-//			} catch (Exception e) {
-//				wordPositions.put(mySample.indexOf(g), g);
-//				wordPositionsL.add(g);
-//			}
-//		}
-//
-//		mySample.stream().forEach(g -> {
-//			try {
-//				Integer.valueOf(g);
-//				numberPositions.put(mySample.indexOf(g), g);
-//				numberPositionsL.add(g);
-//			} catch (Exception e) {
-//				wordPositions.put(mySample.indexOf(g), g);
-//				wordPositionsL.add(g);
-//			}
-//		});
-//
-//		// number list and word list sorted in ascending order
-//		Collections.sort(wordPositionsL);
-//
-//		Collections.sort(numberPositionsL);
-//
-//		// aligning the numbers with the correct keys
-//		int a = 0;
-//		for (Integer i : numberPositions.keySet()) {
-//			numberPositions.put(i, numberPositionsL.get(a));
-//			a++;
-//		}
-//		// aligning the words with the correct keys
-//		int b = 0;
-//		for (Integer i : wordPositions.keySet()) {
-//			wordPositions.put(i, wordPositionsL.get(b));
-//			b++;
-//		}
-//		// created the list to contain the answer
-//		List<String> answer = new ArrayList<>();
-//
-//		for (int i = 0; i < mySample.size(); i++) {
-//			if (numberPositions.get(i) == null) {
-//				answer.add(wordPositions.get(i));
-//			} else {
-//				answer.add(numberPositions.get(i));
-//			}
-//		}
-//
-//		return answer; // Task completed
-//	}
+	public static List<String> arrangeList(List<String> mySample) {
+
+		Map<Integer, String> wordPositions = new HashMap<>();
+		Map<Integer, String> numberPositions = new HashMap<>();
+		List<String> wordPositionsL = new ArrayList<>();
+		List<String> numberPositionsL = new ArrayList<>();
+//	    Iterator<String> gc = numberPositionsL.iterator();
+
+		// looping through the sample ArrayList and using HashMap to store the position
+		// and the word or number as a key value per
+		for (int i = 0; i < mySample.size(); i++) {
+			try {
+				Integer.parseInt(mySample.get(i));
+				numberPositions.put(i, mySample.get(i));
+				numberPositionsL.add(mySample.get(i));
+			} catch (NumberFormatException e) {
+				wordPositions.put(i, mySample.get(i));
+				wordPositionsL.add(mySample.get(i));
+
+			}
+		}
+
+		for (String g : mySample) {
+			try {
+				Integer.valueOf(g);
+				numberPositions.put(mySample.indexOf(g), g);
+				numberPositionsL.add(g);
+			} catch (Exception e) {
+				wordPositions.put(mySample.indexOf(g), g);
+				wordPositionsL.add(g);
+			}
+		}
+
+		mySample.stream().forEach(g -> {
+			try {
+				Integer.valueOf(g);
+				numberPositions.put(mySample.indexOf(g), g);
+				numberPositionsL.add(g);
+			} catch (Exception e) {
+				wordPositions.put(mySample.indexOf(g), g);
+				wordPositionsL.add(g);
+			}
+		});
+
+		// number list and word list sorted in ascending order
+		Collections.sort(wordPositionsL);
+
+		Collections.sort(numberPositionsL);
+
+		// aligning the numbers with the correct keys
+		int a = 0;
+		for (Integer i : numberPositions.keySet()) {
+			numberPositions.put(i, numberPositionsL.get(a));
+			a++;
+		}
+		// aligning the words with the correct keys
+		int b = 0;
+		for (Integer i : wordPositions.keySet()) {
+			wordPositions.put(i, wordPositionsL.get(b));
+			b++;
+		}
+		// created the list to contain the answer
+		List<String> answer = new ArrayList<>();
+
+		for (int i = 0; i < mySample.size(); i++) {
+			if (numberPositions.get(i) == null) {
+				answer.add(wordPositions.get(i));
+			} else {
+				answer.add(numberPositions.get(i));
+			}
+		}
+
+		return answer; // Task completed
+	}
 	
 	
 	public static void printOuts(Employee e) {
