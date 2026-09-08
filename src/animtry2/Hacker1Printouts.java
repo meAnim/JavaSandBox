@@ -22,7 +22,7 @@ public class Hacker1Printouts {
         // Write your code here.
 
         System.out.println("String: " + s);
-//        System.out.println("Double: " + d);
+        System.out.println("Double: " + d);
         System.out.println("Int: " + i);
     }
 
